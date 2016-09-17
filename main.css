@@ -1,0 +1,144 @@
+.menu .navbar {
+  min-height: 10px;
+}
+
+.menu .navbar .nav {
+  font-size: 12px;
+  font-weight: bold;
+
+}
+
+.menu .navbar .nav a {
+  padding: 0 5px;
+  text-decoration: underline;
+  line-height: 52px;
+  color: #444;
+}
+
+.menu .navbar .nav a:hover,
+.menu .navbar .nav a:focus {
+  color: #d91906;
+  text-decoration: none;
+  background-color: white;
+}
+
+.menu .navbar .navbar-form .search-icon {
+  top: 2px;
+  padding-right: 3px;
+}
+
+.container .navbar, .catalog .navbar {
+  margin-bottom: 0;
+  border: 0;
+}
+
+.header .phone {
+  font-size: 28px;
+  margin-right: 0;
+  color: #d91906;
+  line-height: 75px;
+}
+
+.header .phone .phone-icon {
+  top: 3px;
+}
+
+.catalog {
+  background-color: #444;
+  margin: 0;
+}
+
+.catalog .navbar .nav {
+  display: flex;
+  font-size: 18px;
+  color: #d91906;
+}
+.catalog .navbar .nav a {
+  color: white;
+}
+.catalog .navbar .nav a:hover,
+.catalog .navbar .nav a:focus {
+  color: white;
+  text-decoration: none;
+  background-color: #d91906;
+}
+.catalog .navbar .nav .caret {
+  margin-left: 5px;
+}
+
+.jumbotron {
+  text-align: center;
+  position: relative;
+}
+
+.jumbotron .jumbo-title, .jumbotron p {
+  color: #333;
+  position: relative;
+}
+
+.jumbotron::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(images/jumb.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5;
+}
+
+.thumbnail .product-thumbnail {
+  width: 200px;
+  height: 200px;
+}
+
+.footer {
+  background-color: #444;
+  padding-bottom: 20px;
+  color: #dadada;
+}
+
+.footer .column {
+  padding: 10px 0 10px 0;
+}
+.footer .footer-text {
+  padding: 10px 5px;
+}
+
+.footer .footer-link {
+  display: block;
+  color: #dadada;
+  padding: 5px;
+  border-bottom: 1px solid #777;
+}
+
+.footer .footer-link-list, .footer .col-md-4:last-child {
+  padding-top: 30px;
+}
+.footer .col-md-4:last-child {
+  text-align: right;
+}
+
+.footer .col-md-4:last-child div {
+  padding-bottom: 10px;
+}
+
+.footer .col-md-4:last-child span, .footer .col-md-4:last-child a {
+  color: #dadada;
+}
+
+.footer .col-md-4:last-child span {
+  top: 2px;
+  padding-right: 5px;
+}
+
+
+.footer .footer-link span {
+  padding-right: 5px;
+}
+
+.footer a:hover {
+  color: #d91906;
+}
