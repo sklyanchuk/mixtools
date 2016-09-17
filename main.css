@@ -13,6 +13,7 @@
   text-decoration: underline;
   line-height: 52px;
   color: #444;
+  text-transform: uppercase;
 }
 
 .menu .navbar .nav a:hover,
