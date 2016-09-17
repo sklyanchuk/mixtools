@@ -94,6 +94,21 @@
   height: 200px;
 }
 
+.thumbnail .caption {
+  min-height: 200px;
+}
+
+.thumbnail h3, .thumbnail p {
+  text-align: center;
+}
+
+.thumbnail .caption-wrapper {
+  min-height: 165px;
+}
+.thumbnail .btn-order-wrapper {
+  height: 35px;
+}
+
 .footer {
   background-color: #444;
   padding-bottom: 20px;
