@@ -53,17 +53,40 @@
   font-size: 18px;
   color: #d91906;
 }
+
 .catalog .navbar .nav a {
   color: white;
 }
+
 .catalog .navbar .nav a:hover,
 .catalog .navbar .nav a:focus {
   color: white;
   text-decoration: none;
   background-color: #d91906;
 }
+
 .catalog .navbar .nav .caret {
   margin-left: 5px;
+}
+
+.catalog .nav-mobile {
+  display: none;
+}
+
+.catalog .nav-mobile .btn-menu {
+  display: block;
+  float: left;
+  color: #dadada;
+  font-size: 24px;
+  line-height: 46px;
+}
+
+.mobile-current-page-title {
+  display: block;
+  font-size: 22px;
+  color: #dadada;
+  line-height: 50px;
+  text-align: center;
 }
 
 .jumbotron {
@@ -156,4 +179,21 @@
 
 .footer a:hover {
   color: #d91906;
+}
+
+@media (max-width: 768px) {
+  .menu .navbar, .catalog .nav-desktop {
+    display: none;
+  }
+  .header {
+    text-align: center;
+  }
+  .thumbnail .caption,
+  .thumbnail .caption-wrapper,
+  .thumbnail .btn-order-wrapper {
+    min-height: 0;
+  }
+  .catalog .nav-mobile {
+    display: block;
+  }
 }
