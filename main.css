@@ -1,3 +1,15 @@
+/* Модельное окно */
+.modal .modal-body input {
+  margin-bottom: 15px;
+  width: 50%;
+}
+
+.modal .modal-body textarea {
+  width: 80%;
+  height: 80px;
+}
+
+/* Меню */
 .menu .navbar {
   min-height: 10px;
 }

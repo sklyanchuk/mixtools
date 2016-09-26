@@ -9,7 +9,34 @@
   <link rel="shortcut icon" href="images/favicon.png" type="image/png">
 </head>
 <body>
-  <!-- Заголовок -->
+  <!-- Модальное окно заказа -->
+  <div id="myModalBox" class="modal fade">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!-- Заголовок модального окна -->
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h4 class="modal-title">Форма заказа</h4>
+        </div>
+        <!-- Основное содержимое модального окна -->
+        <div class="modal-body">
+          <p>Как к Вам обращаться?</p>
+          <input type="text" name="client-name" tabindex="1" autofocus required></input>
+          <p>Как с Вами связаться?</p>
+          <input type="text" name="client-contact" tabindex="2" required></input>
+          <p>Что Вас заинтересовало?<p>
+          <textarea name="client-offer" tabindex="3" required></textarea>
+        </div>
+        <!-- Футер модального окна -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+          <button type="button" class="btn btn-primary" tabindex="4">Отправить</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Верхнее меню -->
   <section class="menu container">
     <nav class="navbar" role="navigation">
       <ul class="nav navbar-nav navbar-left">
@@ -27,6 +54,8 @@
       </form>
     </nav>
   </section>
+
+  <!-- Заголовок с логотипом и телефоном -->
   <header class="header container">
     <a href="index.html" class="logo navbar-left">
       <img src="images/logo.png" alt="Mixtools">
@@ -82,12 +111,12 @@
   </section>
 
   <!-- Блок о компании -->
-  <section class="container">
-      О КОМПАНИИ
-  </section>
-
-  <!-- Основной блок -->
   <main class="container">
+      О КОМПАНИИ
+  </main>
+
+  <!-- Блок с товарами -->
+  <section class="container">
     <div class="column">
       <div class="col-sm-6 col-md-4">
         <div class="thumbnail">
@@ -98,7 +127,7 @@
               <p>Сверла с механическим креплением сменных многогранных неперетачиваемых твердосплавных пластин.</p>
             </div>
             <p class="btn-order-wrapper">
-              <a href="#" class="btn btn-primary" role="button">Заказать</a>
+              <a href="#" class="btn btn-primary" role="button" data-toggle="modal" href="#myModalBox">Заказать</a>
             </p>
           </div>
         </div>
@@ -115,7 +144,7 @@
 слойным или многослойным износостойким покрытием.</p>
             </div>
             <p class="btn-order-wrapper">
-              <a href="#" class="btn btn-primary" role="button">Заказать</a>
+              <a href="#" class="btn btn-primary" role="button" data-toggle="modal" href="#myModalBox">Заказать</a>
             </p>
           </div>
         </div>
@@ -131,13 +160,13 @@
               <p>Сверло кольцевое цельное из P6M5 (P18) для врезного устройства ПВГМ-09.</p>
             </div>
             <p class="btn-order-wrapper">
-              <a href="#" class="btn btn-primary" role="button">Заказать</a>
+              <a href="#" class="btn btn-primary" role="button" data-toggle="modal" href="#myModalBox">Заказать</a>
             </p>
           </div>
         </div>
       </div>
     </div>
-  </main>
+  </section>
 
   <!-- Футер -->
   <footer class="footer">
