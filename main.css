@@ -8,6 +8,12 @@
 
 }
 
+.menu .navbar .nav .current-page {
+  color: #d91906;
+  text-decoration: none;
+  background-color: white;
+}
+
 .menu .navbar .nav a {
   padding: 0 5px;
   text-decoration: underline;
@@ -38,6 +44,7 @@
   margin-right: 0;
   color: #337ab7;
   line-height: 75px;
+  position: relative;
 }
 
 .header .phone .phone-icon {
