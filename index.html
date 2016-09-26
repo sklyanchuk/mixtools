@@ -14,8 +14,8 @@
     <nav class="navbar" role="navigation">
       <ul class="nav navbar-nav navbar-left">
         <li><a href=#>О компании</a></li>
+        <li><a href=#>Каталог</a></li>
         <li><a href=#>Доставка</a></li>
-        <li><a href=#>Оплата</a></li>
         <li><a href=#>Реквизиты</a></li>
         <li><a href=#>Контакты</a></li>
       </ul>
@@ -32,8 +32,8 @@
       <img src="images/logo.png" alt="Mixtools">
     </a>
     <div class="phone navbar-right">
-      <div class="phone-number"><span class="glyphicon glyphicon-earphone phone-icon"></span>
-8 (495) 555-55-55</div>
+        <span class="glyphicon glyphicon-earphone phone-icon"></span>
+        <a href="tel:84955555555">8 (495) 555-55-55</a>
     </div>
   </header>
 
@@ -41,22 +41,50 @@
   <section class="catalog">
     <nav class="navbar container nav-desktop" role="navigation">
       <ul class="nav navbar-nav">
-        <li class="dropdown"><a href=#>Фрезы<b class="caret"></b></a></li>
-        <li class="dropdown"><a href=#>Сверла<b class="caret"></b></a></li>
-        <li class="dropdown"><a href=#>Зенковки<b class="caret"></b></a></li>
-        <li class="dropdown"><a href=#>Инструмент<b class="caret"></b></a></li>
-        <li class="dropdown"><a href=#>Диагностика<b class="caret"></b></a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Фрезы<b class="caret"></b></a>
+          <ul class="dropdown-menu submenu" role="menu" aria-labelledby="dLabel">
+            <li><a class="submenu-element" tabindex="-1" href="#">Фрезы с МНП</a></li>
+            <li><a class="submenu-element" tabindex="-1" href="#">Из быстрорежущей стали</a></li>
+            <li><a class="submenu-element" tabindex="-1" href="#">Из твердого сплава</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href=# class="dropdown-toggle" data-toggle="dropdown">Сверла<b class="caret"></b></a>
+          <ul class="dropdown-menu submenu" role="menu" aria-labelledby="dLabel">
+            <li><a class="submenu-element" tabindex="-1" href="#">Сверла с МНП</a></li>
+            <li><a class="submenu-element" tabindex="-1" href="#">Из быстрорежущей стали</a></li>
+            <li><a class="submenu-element" tabindex="-1" href="#">Из твердого сплава</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href=# class="dropdown-toggle" data-toggle="dropdown">Зенковки<b class="caret"></b></a>
+          <ul class="dropdown-menu  submenu" role="menu" aria-labelledby="dLabel">
+            <li><a class="submenu-element" tabindex="-1" href="#">Из быстрорежущей стали</a></li>
+            <li><a class="submenu-element" tabindex="-1" href="#">Из твердого сплава</a></li>
+          </ul>
+        </li>
+        <li><a href=#>Инструменты</a></li>
+        <li><a href=#>Диагностика</a></li>
       </ul>
     </nav>
-    <nav class="navbar container nav-mobile" role="navigation">
-      <span class="mobile-current-page-title dropdown">Главная<b class="caret"></b></span>
+    <!-- Каталог мобильной версии -->
+    <nav class="navbar container nav-mobile dropdown" role="navigation">
+      <span class="mobile-current-page-title dropdown-toggle">Каталог<b class="caret"></b></span>
+      <ul class="dropdown-menu submenu" role="menu" aria-labelledby="dLabel">
+        <li><a class="submenu-element" tabindex="-1" href="#">Фрезы</a></li>
+        <li><a class="submenu-element" tabindex="-1" href="#">Сверла</a></li>
+        <li><a class="submenu-element" tabindex="-1" href="#">Зенковки</a></li>
+        <li><a class="submenu-element" tabindex="-1" href="#">Инструменты</a></li>
+        <li><a class="submenu-element" tabindex="-1" href="#">Диагностика</a></li>
+      </ul>
     </nav>
   </section>
 
   <!-- Джамбатрон -->
   <section class="jumbotron">
-    <h1 class="jumbo-title">Крупный заголовок</h1>
-    <p>Подзаголовок</p>
+    <h1 class="jumbo-title">Магазин инструментов</h1>
+    <p>Инструмент промышленного и общего назначения от разных производителей</p>
     <p><a class="btn btn-primary btn-lg" role="button">Оформить заказ</a></p>
   </section>
 
@@ -121,18 +149,20 @@
           <a href="index.html" class="">
             <img src="images/logo.png" alt="Mixtools">
           </a>
-          <div class="footer-text">Mixtools - ваш надежный партнер, поставщик качественного износостойкого инструмента (цельнотвердосплавного и из быстрорежущей стали), производства мировых лидеров в области инструмента – компании SANDVIK, DORMER PRAMET и CORUN.</div>
+          <div class="footer-text">Mixtools - ваш надежный партнер, поставщик качественного износостойкого инструмента производства мировых лидеров в области инструмента – компаний TDC, CORUN, GRATTEC и ПК МИОН.</div>
         </div>
         <div class="col-md-4 footer-link-list">
           <a href="#" class="footer-link"><span class="glyphicon glyphicon-chevron-right"></span>О компании</a>
+          <a href="#" class="footer-link"><span class="glyphicon glyphicon-chevron-right"></span>Каталог</a>
           <a href="#" class="footer-link"><span class="glyphicon glyphicon-chevron-right"></span>Доставка</a>
-          <a href="#" class="footer-link"><span class="glyphicon glyphicon-chevron-right"></span>Оплата</a>
           <a href="#" class="footer-link"><span class="glyphicon glyphicon-chevron-right"></span>Реквизиты</a>
           <a href="#" class="footer-link"><span class="glyphicon glyphicon-chevron-right"></span>Контакты</a>
         </div>
         <div class="col-md-4">
-          <div><span class="glyphicon glyphicon-earphone phone-icon"></span>
-  8 (495) 555-55-55</div>
+          <div>
+            <span class="glyphicon glyphicon-earphone phone-icon"></span>
+            <a href="tel:84955555555">8 (495) 555-55-55</a>
+          </div>
           <div><a href="mailto:mail@example.com"><span class="glyphicon glyphicon glyphicon-envelope"></span>mail@example.com</a></div>
           <div>© 2016 Mixtools</div>
           <div>Все права защищены</div>
@@ -142,6 +172,6 @@
   </footer>
 
   <script src="//code.jquery.com/jquery-latest.js"></script>
-  <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>
