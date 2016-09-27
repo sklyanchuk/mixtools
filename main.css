@@ -11,7 +11,9 @@
 }
 
 /* Меню */
-
+.menu {
+  border-bottom: 1px solid #888;
+}
 .menu .navbar {
   min-height: 5px;
 }
@@ -228,6 +230,16 @@
 
 .footer a:hover {
   color: #d91906;
+}
+
+/*О компании*/
+
+.about {
+  margin-bottom: 15px;
+}
+.about-header, .about-text {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 /* Медиа-запросы */
