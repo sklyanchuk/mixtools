@@ -11,9 +11,12 @@
 }
 
 /* Меню */
+
 .menu {
-  border-bottom: 1px solid #888;
+  background-color: #dadada;
+  border-bottom: 1px solid #888; 
 }
+
 .menu .navbar {
   min-height: 5px;
 }
@@ -21,13 +24,11 @@
 .menu .navbar .nav {
   font-size: 12px;
   font-weight: bold;
-
 }
 
 .menu .navbar .nav .current-page {
   color: #d91906;
   text-decoration: none;
-  background-color: white;
 }
 
 .menu .navbar .nav a {
@@ -42,7 +43,7 @@
 .menu .navbar .nav a:focus {
   color: #d91906;
   text-decoration: none;
-  background-color: white;
+  background-color: #dadada;
 }
 
 .container .navbar, .catalog .navbar {
@@ -243,7 +244,11 @@
 }
 
 /* Медиа-запросы */
-
+@media (max-width: 995px) {
+  .navbar-form {
+    display: none;
+  }
+}
 @media (max-width: 768px) {
   .catalog .nav-desktop {
     display: none;
