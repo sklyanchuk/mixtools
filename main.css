@@ -239,12 +239,13 @@
 .contacts-info {
   margin: 5px 0;
 }
-
+.about-header {
+  margin-top: 0;
+}
 .about-header,
-.deivery-header,
-.details-header,
 .contacts-header {
   border-bottom: 1px solid #888;
+  line-height: 34px;
 }
 
 .production  {
