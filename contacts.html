@@ -9,56 +9,17 @@
   <link rel="shortcut icon" href="images/favicon.png" type="image/png">
 </head>
 <body>
-  <!-- Модальное окно заказа -->
-  <div id="myModalBox" class="modal fade">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <!-- Заголовок модального окна -->
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-          <h4 class="modal-title">Форма заказа</h4>
-        </div>
-        <!-- Основное содержимое модального окна -->
-        <div class="modal-body">
-          <p>Как к Вам обращаться?</p>
-          <input type="text" name="client-name" tabindex="1" autofocus required></input>
-          <p>Как с Вами связаться?</p>
-          <input type="text" name="client-contact" tabindex="2" required></input>
-          <p>Что Вас заинтересовало?<p>
-          <textarea name="client-offer" tabindex="3" required placeholder="Здесь можно указать наименование товаров и их количество"></textarea>
-        </div>
-        <!-- Футер модального окна -->
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
-          <button type="button" class="btn btn-primary" tabindex="4">Отправить</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Верхнее меню -->
-  <section class="menu">
+  <!-- Заголовок -->
+  <header class="header">
     <div class="container">
-      <nav class="navbar" role="navigation">
-        <ul class="nav navbar-nav navbar-left">
-          <li><a href="about.html">О компании</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="delivery.html">Доставка</a></li>
-          <li><a href="details.html">Реквизиты</a></li>
-          <li><a href="contacts.html" class="current-page">Контакты</a></li>
-        </ul>
-      </nav>
-    </div>
-  </section>
-
-  <!-- Заголовок с логотипом и телефоном -->
-  <header class="header container">
-    <a href="index.html" class="logo navbar-left">
-      <img src="images/logo.png" alt="Mixtools">
-    </a>
-    <div class="phone navbar-right">
-        <span class="glyphicon glyphicon-earphone phone-icon"></span>
-        <a href="tel:84955555555">8 (495) 555-55-55</a>
+      <a href="index.html" class="logo navbar-left">
+        <img src="images/logo.png" alt="Mixtools">
+      </a>
+      <div class="phone navbar-right">
+          <span class="glyphicon glyphicon-earphone phone-icon"></span>
+          <a href="tel:84955555555">8 (499) 391-40-47</a>
+          <a href="mailto:mixtoolsim@gmail.com"><span class="glyphicon glyphicon-envelope"></span>mixtoolsim@gmail.com</a>
+      </div>
     </div>
   </header>
 
@@ -78,43 +39,97 @@
           <a href=# class="dropdown-toggle" data-toggle="dropdown">Сверла<b class="caret"></b></a>
           <ul class="dropdown-menu submenu" role="menu" aria-labelledby="dLabel">
             <li><a class="submenu-element" tabindex="-1" href="#">Сверла с МНП</a></li>
-            <li><a class="submenu-element" tabindex="-1" href="#">Из быстрорежущей стали</a></li>
+            <li><a class="submenu-element" tabindex="-1" href="#">Сверла с ЦХ</a></li>
+            <li><a class="submenu-element" tabindex="-1" href="#">Сверла с КХ</a></li>
             <li><a class="submenu-element" tabindex="-1" href="#">Из твердого сплава</a></li>
+            <li><a class="submenu-element" tabindex="-1" href="#">Наборы сверл</a></li>
           </ul>
         </li>
         <li class="dropdown">
-          <a href=# class="dropdown-toggle" data-toggle="dropdown">Зенковки<b class="caret"></b></a>
+          <a href=# class="dropdown-toggle" data-toggle="dropdown">Метчики<b class="caret"></b></a>
           <ul class="dropdown-menu submenu" role="menu" aria-labelledby="dLabel">
-            <li><a class="submenu-element" tabindex="-1" href="#">Из быстрорежущей стали</a></li>
-            <li><a class="submenu-element" tabindex="-1" href="#">Из твердого сплава</a></li>
+            <li><a class="submenu-element" tabindex="-1" href="#">Метчики ГОСТ</a></li>
+            <li><a class="submenu-element" tabindex="-1" href="#">Метчики DIN</a></li>
           </ul>
         </li>
-        <li><a href=#>Инструменты</a></li>
-        <li><a href=#>Диагностика</a></li>
-        <form class="navbar-form navbar-right" role="search">
+        <li class="dropdown">
+          <a href=# class="dropdown-toggle" data-toggle="dropdown">Развертки<b class="caret"></b></a>
+          <ul class="dropdown-menu submenu" role="menu" aria-labelledby="dLabel">
+            <li><a class="submenu-element" tabindex="-1" href="#">Развертки машинные</a></li>
+            <li><a class="submenu-element" tabindex="-1" href="#">Развертки ручные</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href=# class="dropdown-toggle" data-toggle="dropdown">Инструмент<b class="caret"></b></a>
+          <ul class="dropdown-menu submenu" role="menu" aria-labelledby="dLabel">
+            <li><a class="submenu-element" tabindex="-1" href="#">Для нефтегазовой отрасли</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href=# class="dropdown-toggle" data-toggle="dropdown">Услуги<b class="caret"></b></a>
+          <ul class="dropdown-menu submenu" role="menu" aria-labelledby="dLabel">
+            <li><a class="submenu-element" tabindex="-1" href="#">Переточка инструмента</a></li>
+            <li><a class="submenu-element" tabindex="-1" href="#">Фрезерные работы</a></li>
+            <li><a class="submenu-element" tabindex="-1" href="#">Инструмент по чертежам</a></li>
+          </ul>
+        </li>
+        <!-- <form class="navbar-form navbar-right" role="search">
           <div class="form-group">
             <input type="text" class="form-control" placeholder="Поиск по каталогу">
           </div>
           <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search search-icon"></span>Найти</button>
-        </form>
+        </form> -->
       </ul>
     </nav>
+
     <!-- Каталог мобильной версии -->
     <nav class="navbar container nav-mobile dropdown" role="navigation">
       <span class="mobile-current-page-title dropdown-toggle">Каталог<b class="caret"></b></span>
       <ul class="dropdown-menu submenu" role="menu" aria-labelledby="dLabel">
         <li><a class="submenu-element" tabindex="-1" href="#">Фрезы</a></li>
         <li><a class="submenu-element" tabindex="-1" href="#">Сверла</a></li>
-        <li><a class="submenu-element" tabindex="-1" href="#">Зенковки</a></li>
-        <li><a class="submenu-element" tabindex="-1" href="#">Инструменты</a></li>
-        <li><a class="submenu-element" tabindex="-1" href="#">Диагностика</a></li>
+        <li><a class="submenu-element" tabindex="-1" href="#">Метчики</a></li>
+        <li><a class="submenu-element" tabindex="-1" href="#">Развертки</a></li>
+        <li><a class="submenu-element" tabindex="-1" href="#">Инструмент</a></li>
+        <li><a class="submenu-element" tabindex="-1" href="#">Услуги</a></li>
       </ul>
     </nav>
   </section>
 
   <!-- Контакты -->
-  <main class="container">
-    КОНТАКТЫ, СХЕМА ПРОЕЗДА
+  <main class="contacts">
+    <div class="container">
+      <!-- Блок контактов -->
+      <h3 class="contacts-header">Контакты Mixtools</h3>
+      <p class="contacts-info"><strong>Телефоны: </strong></p>
+      <p class="contacts-info"><a href="tel:84993914047">8 (499) 391-40-47</a></p>
+      <p class="contacts-info"><a href="tel:89778033283">8 977 803-32-83</a></p>
+      <p class="contacts-info"><a href="tel:89778160114">8 977 816-01-14</a></p><br>
+      <p class="contacts-info"><strong>E-mail: </strong><a href="mailto:mixtoolsim@gmail.com">mixtoolsim@gmail.com</a></p><br>
+      <p class="contacts-info"><strong>Мы работаем: </strong></p>
+      <p class="contacts-info">Понедельник - пятница: с 09:00 до 18:00.</p>
+      <p class="contacts-info">Суббота - воскресенье: выходные.</p><br>
+
+      <!-- Реквизиты -->
+      <h4 class="contacts-info">Реквизиты</h4>
+      <p class="contacts-info"><strong>Наименование компании: ООО &#171ЭДО-ДРАЙВ&#187.</strong></p>
+      <p class="contacts-info">ИНН 7719409236<br>КПП 771901001</p>
+      <p class="contacts-info">Юридический и почтовый адрес: 105523, г. Москва, ул. 16-я Парковая, д.49, корп.2, кв.67<br>
+      Телефон: +7 (499) 391-40-47.</p>
+      <p class="contacts-info">
+        Р/сч № 40702810402560001032 в Филиале АО “АЛЬФА-БАНК” в г.Москва<br>
+        БИК 044525593, к/сч 30101810200000000593<br>
+        ОГРН 1157746308455<br>
+        ОКПО 42964504<br>
+        ОКОГУ 4210014<br>
+        ОКВЭД 51.64.2<br>
+        ОКАТО 69401363000</p><br>
+
+      <!-- Адрес -->
+      <h4 class="contacts-info">Фактический адрес:</h4>
+      <p class="contacts-info">г. Москва, 10-я Парковая улица, д.18, оф.18</p><br>
+      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=h9stEZI_CWj8rJG2OfTv5E1oQ77XTztf&amp;width=100%&amp;height=400&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script><br>
+    </div>
   </main>
 
   <!-- Блок с товарами -->
@@ -125,7 +140,7 @@
           <img src="images/sverlo.jpg" alt="..." class="product-thumbnail">
           <div class="caption">
             <div class="caption-wrapper">
-              <h3>Сверло с МНП</h3>
+              <h4>Сверло с МНП</h4>
               <p>Сверла с механическим креплением сменных многогранных неперетачиваемых твердосплавных пластин.</p>
             </div>
             <p class="btn-order-wrapper">
@@ -141,9 +156,8 @@
           <img src="images/freza.jpg" alt="..." class="product-thumbnail">
           <div class="caption">
             <div class="caption-wrapper">
-              <h3>Фреза дисковая с МНП</h3>
-              <p>Дисковые фрезы оснащены сменными многогранными неперетачиваемыми твердосплавными пластинами, в том числе, с одно-
-слойным или многослойным износостойким покрытием.</p>
+              <h4>Фреза дисковая с МНП</h4>
+              <p>Дисковые фрезы оснащены сменными многогранными твердосплавными пластинами, в том числе, с однослойным или многослойным износостойким покрытием.</p>
             </div>
             <p class="btn-order-wrapper">
               <a class="btn btn-primary" role="button" data-toggle="modal" href="#myModalBox">Заказать</a>
@@ -158,7 +172,7 @@
           <img src="images/instr.jpg" alt="..." class="product-thumbnail">
           <div class="caption">
             <div class="caption-wrapper">
-              <h3>Инструмент для нефтегазовой отрасли</h3>
+              <h4>Инструмент для нефтегазовой отрасли</h4>
               <p>Сверло кольцевое цельное из P6M5 (P18) для врезного устройства ПВГМ-09.</p>
             </div>
             <p class="btn-order-wrapper">
@@ -183,18 +197,17 @@
         <div class="col-md-4 footer-link-list">
           <a href="about.html" class="footer-link"><span class="glyphicon glyphicon-chevron-right"></span>О компании</a>
           <a href="catalog.html" class="footer-link"><span class="glyphicon glyphicon-chevron-right"></span>Каталог</a>
-          <a href="delivery.html" class="footer-link"><span class="glyphicon glyphicon-chevron-right"></span>Доставка</a>
-          <a href="details.html" class="footer-link"><span class="glyphicon glyphicon-chevron-right"></span>Реквизиты</a>
           <a href="contacts.html" class="footer-link"><span class="glyphicon glyphicon-chevron-right"></span>Контакты</a>
         </div>
         <div class="col-md-4">
           <div>
             <span class="glyphicon glyphicon-earphone phone-icon"></span>
-            <a href="tel:84955555555">8 (495) 555-55-55</a>
+            <a href="tel:84955555555">8 (499) 391-40-47</a>
           </div>
-          <div><a href="mailto:mail@example.com"><span class="glyphicon glyphicon glyphicon-envelope"></span>mail@example.com</a></div>
+          <div><a href="mailto:mixtoolsim@gmail.com"><span class="glyphicon glyphicon-envelope"></span>mixtoolsim@gmail.com</a></div>
           <div>© 2016 Mixtools</div>
           <div>Все права защищены</div>
+          <div class="production">Сайт разработал <a href="http://www.sklart.ru">Sklart</a></div>
         </div>
       </div>
     </div>

@@ -2,48 +2,14 @@
 
 .modal .modal-body input {
   margin-bottom: 15px;
-  width: 50%;
+  width: 200px;
+
 }
 
 .modal .modal-body textarea {
-  width: 80%;
+  width: 400px;
   height: 80px;
-}
-
-/* Меню */
-
-.menu {
-  background-color: #dadada;
-  border-bottom: 1px solid #888; 
-}
-
-.menu .navbar {
-  min-height: 5px;
-}
-
-.menu .navbar .nav {
-  font-size: 12px;
-  font-weight: bold;
-}
-
-.menu .navbar .nav .current-page {
-  color: #d91906;
-  text-decoration: none;
-}
-
-.menu .navbar .nav a {
-  padding: 0 5px;
-  text-decoration: underline;
-  line-height: 28px;
-  color: #444;
-  text-transform: uppercase;
-}
-
-.menu .navbar .nav a:hover,
-.menu .navbar .nav a:focus {
-  color: #d91906;
-  text-decoration: none;
-  background-color: #dadada;
+  padding: 5px;
 }
 
 .container .navbar, .catalog .navbar {
@@ -55,12 +21,32 @@
   font-size: 24px;
   margin-right: 0;
   color: #337ab7;
-  line-height: 75px;
+  line-height: 25px;
   position: relative;
+}
+
+.header .phone{
+  margin-top: 15px;
+}
+
+.header .phone a:nth-of-type(2) {
+  font-size: 16px;
+  text-decoration: none;
+  margin-right: 0;
+  border-bottom: 1px dashed #000080;
+  position: absolute;
+  right: 0;
+}
+.header .phone a:nth-of-type(2):hover {
+  border-bottom: hidden;
 }
 
 .header .phone .phone-icon {
   top: 3px;
+  right: 5px;
+}
+
+.header .glyphicon-envelope {
   right: 5px;
 }
 
@@ -171,7 +157,7 @@
   min-height: 200px;
 }
 
-.thumbnail h3, .thumbnail p {
+.thumbnail h4, .thumbnail p {
   text-align: center;
 }
 
@@ -235,12 +221,38 @@
 
 /*О компании*/
 
-.about {
+.about-company {
   margin-bottom: 15px;
 }
-.about-header, .about-text {
+.about-header,
+.about-text,
+.deivery-header,
+.details-header,
+.details p,
+.contacts .contacts-header,
+.contacts .contacts-info,
+.contacts h4 {
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.contacts-info {
+  margin: 5px 0;
+}
+
+.about-header,
+.deivery-header,
+.details-header,
+.contacts-header {
+  border-bottom: 1px solid #888;
+}
+
+.production  {
+  margin-top: 35px;
+  color: #337ab7;
+}
+.footer .container .production a {
+  color: #337ab7;
 }
 
 /* Медиа-запросы */
@@ -253,13 +265,6 @@
   .catalog .nav-desktop {
     display: none;
   }
-  .menu .navbar .nav {
-    text-align: center;
-  }
-  .menu .navbar .nav li {
-    display: inline-block;
-  }
-
   .header {
     text-align: center;
   }
@@ -270,5 +275,15 @@
   }
   .catalog .nav-mobile {
     display: block;
+  }
+
+  .header .phone a:nth-of-type(2) {
+    position: relative;
+    margin: auto;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    text-decoration: underline;
   }
 }
